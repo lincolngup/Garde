@@ -1,0 +1,102 @@
+<!--
+    Partial view for the Contact page.
+-->
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Contact
+                <small>Garde Systems LLC</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Contact</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Contact Details Column -->
+        <div class="col-md-4">
+            <h3>Contact Details</h3>
+            <p>
+                Garde Systems LLC<br>
+                5355 Bison Trail<br>
+                Bow Mar, CO 80123<br>
+            </p>
+            <p><i class="fa fa-phone"></i>
+                <abbr title="Phone">P</abbr>: 800-506-9680</p>
+            <p><i class="fa fa-envelope-o"></i>
+                <abbr title="Email">E</abbr>: <a href="mailto:Sales@GardeSystems.com">Sales@GardeSystems.com</a>
+            </p>
+            <p><i class="fa fa-clock-o"></i>
+                <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+        </div>
+        <!-- Map Column -->
+        <div class="col-md-8">
+            <!-- Embedded Google Map -->
+            <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;q=Bow Mar, CO&amp;t=m&amp;z=4&amp;output=embed">
+            </iframe>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Send us a Message</h3>
+            <p>
+                To request more information, or to provide us with feedback, please
+                use the form below.
+            </p>
+            <form name="sentMessage" id="contactForm" novalidate>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Name:</label>
+                        <input type="text" class="form-control" id="name"
+                               required data-validation-required-message="Please enter your name.">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone"
+                               required data-validation-required-message="Please enter your phone number.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Email Address:</label>
+                        <input type="email" class="form-control" id="email"
+                               required data-validation-required-message="Please enter your email address.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Message:</label>
+                        <textarea rows="10" cols="100" class="form-control" id="message"
+                                  required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                    </div>
+                </div>
+                <div id="success"></div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+    </div> <!-- /.row -->
+
+</div> <!-- /.container -->
+
+<!-- Contact Form JavaScript -->
+<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
