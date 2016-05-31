@@ -14,6 +14,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'home/home.html',
         controller: 'homeController'
     });
+    $routeProvider.when('/products', {
+        templateUrl: 'products/products.html',
+        controller: 'productsController'
+    });
     $routeProvider.when('/about', {
         templateUrl: 'about/about.html',
         controller: 'aboutController'
