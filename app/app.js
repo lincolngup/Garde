@@ -32,3 +32,17 @@ app.config(['$routeProvider', function($routeProvider) {
     });
     $routeProvider.otherwise({redirectTo: '/home'});
 }]);
+
+/*
+ * The show-tabs directive corrects click handling for nav-tabs.
+ */
+app.directive("showTabs", function() {
+    return {
+        link: function (scope, element, attrs) {
+            element.click(function(event) {
+                event.preventDefault();
+                $(element).tab('show');
+            });
+        }
+    };
+});
