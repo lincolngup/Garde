@@ -1,5 +1,5 @@
 /*
- * Root module for the Garde web site
+ * Root module for the Garde Systems web site
  */
 "use strict";
 
@@ -17,6 +17,10 @@ app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/products', {
         templateUrl: 'products/products.html',
         controller: 'productsController'
+    });
+    $routeProvider.when('/order', {
+        templateUrl: 'buy/buy.html',
+        controller: 'orderController'
     });
     $routeProvider.when('/about', {
         templateUrl: 'about/about.html',
@@ -41,7 +45,7 @@ app.directive("showTabs", function() {
         link: function (scope, element, attrs) {
             element.click(function(event) {
                 event.preventDefault();
-                $(element).tab('show');
+                $(element).tab("show");
             });
         }
     };

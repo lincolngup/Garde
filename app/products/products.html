@@ -1,5 +1,5 @@
 <!--
-    Partial view for the Privacy page.
+    Partial view for the Products page.
 -->
 
 <!-- Page Content -->
@@ -22,7 +22,7 @@
     <!-- Image Header -->
     <div class="row">
         <div class="col-lg-12">
-            <img class="img-responsive" src="images/BuckleGarde_dual_view_horiz_small.jpg" alt="BuckeGarde">
+            <img class="img-responsive center-block" src="images/BuckleGarde_dual_view_horiz_small.jpg" alt="BuckeGarde">
         </div>
     </div> <!-- /.row -->
 
@@ -35,60 +35,60 @@
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                        <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
+                    <a href="#/order" class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </a>
                 </div>
                 <div class="panel-body">
                     <h4>Purchase</h4>
                     <p>Buy one or more BuckleGardes.</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#/order" class="btn btn-primary">Buy Now</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                        <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
-                        </span>
+                    <a href="#" class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
+                    </a>
                 </div>
                 <div class="panel-body">
                     <h4>Demo</h4>
                     <p>See a demonstration online.</p>
-                    <a href="#" class="btn btn-primary">View Demo</a>
+                    <a href="#" class="btn btn-default">View Demo</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                        <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                        </span>
+                    <a href="#" class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                    </a>
                 </div>
                 <div class="panel-body">
                     <h4>Datasheet</h4>
                     <p>Download a BuckleGarde datasheet.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-default">Learn More</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                        <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                        </span>
+                    <a href="#" class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                    </a>
                 </div>
                 <div class="panel-body">
                     <h4>Pricing</h4>
                     <p>Download BuckleGarde pricing.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-default">Learn More</a>
                 </div>
             </div>
         </div>
@@ -107,47 +107,60 @@
             <ul id="myTab" class="nav nav-tabs nav-justified">
                 <li class="active">
                     <!-- show-tabs directive corrects click handling -->
-                    <a href="#service-one" show-tabs="" data-toggle="tab">
+                    <a href="#step-one" show-tabs="" data-toggle="tab">
                         <i class="fa fa-fw fa-check-square-o"></i>Step One
                     </a>
                 </li>
                 <li class="">
                     <!-- show-tabs directive corrects click handling -->
-                    <a href="#service-two" show-tabs="" data-toggle="tab">
+                    <a href="#step-two" show-tabs="" data-toggle="tab">
                         <i class="fa fa-fw fa-check-square-o"></i>Step Two
                     </a>
                 </li>
                 <li class="">
                     <!-- show-tabs directive corrects click handling -->
-                    <a href="#service-three" show-tabs="" data-toggle="tab">
+                    <a href="#step-three" show-tabs="" data-toggle="tab">
                         <i class="fa fa-fw fa-check-square-o"></i>Step Three
                     </a>
                 </li>
             </ul>
 
             <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active in" id="service-one">
-                    <h4>Step One</h4>
+                <div class="tab-pane fade active in" id="step-one">
+                    <h4>Step 1</h4>
                     <p>
-                        Step 1: Cover the buckle
+                        Cover the buckle
+                        <a href="#step-two" show-tabs="" data-toggle="tab">
+                            <i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>
+                        </a>
                     </p>
                     <div class="col-md-6">
                         <img class="img-responsive" src="images/IMG_FirstSmall.jpg" alt="BuckleGarde first step">
                     </div>
                 </div>
-                <div class="tab-pane fade" id="service-two">
-                    <h4>Step Two</h4>
+                <div class="tab-pane fade" id="step-two">
+                    <h4>Step 2</h4>
                     <p>
-                        Step 2: Press the buckle together to lock as normal
+                        <a href="#step-one" show-tabs="" data-toggle="tab">
+                            <i class="fa fa-fw fa-chevron-circle-left" aria-hidden="true"></i>
+                        </a>
+                        Press the buckle together to lock as normal
+                        <a href="#step-three" show-tabs="" data-toggle="tab">
+                            <i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>
+                        </a>
                     </p>
                     <div class="col-md-6">
                         <img class="img-responsive" src="images/IMG_SecondSmall.jpg" alt="BuckleGarde second step">
                     </div>
                 </div>
-                <div class="tab-pane fade" id="service-three">
-                    <h4>Step Three</h4>
+                <div class="tab-pane fade" id="step-three">
+                    <h4>Step 3</h4>
                     <p>
-                        Step 3: Put in a key or similar device
+                        <a href="#step-two" show-tabs="" data-toggle="tab">
+                            <i class="fa fa-fw fa-chevron-circle-left" aria-hidden="true"></i>
+                        </a>
+
+                        Put in a key or similar device
                         and press down against the push
                         button to release the buckle
                     </p>
