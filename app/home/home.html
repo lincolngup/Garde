@@ -60,29 +60,10 @@
         </div>
     </div> <!-- /.row -->
 
-    <!-- Call to Action Section -->
-    <div class="well">
-        <div class="row">
-            <div class="col-md-1">
-                <span class="fa-stack fa-2x">
-                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                      <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                </span>
-            </div>
-            <div class="col-md-7">
-                <p>
-                    Ready to make a purchase? You can
-                    <a href="#/contact">click here to contact us directly</a>
-                    or place your order online with a credit card.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <a class="btn btn-primary btn-block" href="#/order">Buy Now</a>
-            </div>
-        </div>
-    </div>
+    <!-- Call to action section - buy it -->
+    <div ng-include="'includes/placeOrder.html'"></div>
 
     <!-- Include a description of the BuckleGarde -->
-    <div ng-include="'includes/WhatIsBuckleGarde.html'"></div>
+    <div ng-include="'includes/whatIsBuckleGarde.html'"></div>
 
 </div> <!-- /.container -->

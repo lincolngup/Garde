@@ -30,6 +30,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'contact/contact.html',
         controller: 'contactController'
     });
+    $routeProvider.when('/news', {
+        templateUrl: 'news/news.html',
+        controller: 'newsController'
+    });
     $routeProvider.when('/privacy', {
         templateUrl: 'privacy/privacy.html',
         controller: 'privacyController'

@@ -65,7 +65,8 @@
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <a href="#" class="fa-stack fa-3x">
+                    <!-- target="_blank" forces the doc to open in a new tab -->
+                    <a href="files/BuckleGarde_overview.pdf" class="fa-stack fa-3x" target="_blank">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
                     </a>
@@ -73,14 +74,16 @@
                 <div class="panel-body">
                     <h4>Datasheet</h4>
                     <p>Download a BuckleGarde datasheet.</p>
-                    <a href="#" class="btn btn-default">Learn More</a>
+                    <!-- target="_blank" forces the doc to open in a new tab -->
+                    <a href="files/BuckleGarde_overview.pdf" class="btn btn-default" target="_blank">Learn More</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <a href="#" class="fa-stack fa-3x">
+                    <!-- target="_blank" forces the doc to open in a new tab -->
+                    <a href="files/BuckleGarde_pricing.pdf" class="fa-stack fa-3x" target="_blank">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
                     </a>
@@ -88,14 +91,15 @@
                 <div class="panel-body">
                     <h4>Pricing</h4>
                     <p>Download BuckleGarde pricing.</p>
-                    <a href="#" class="btn btn-default">Learn More</a>
+                    <!-- target="_blank" forces the doc to open in a new tab -->
+                    <a href="files/BuckleGarde_pricing.pdf" class="btn btn-default" target="_blank">Learn More</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- /.row -->
 
     <!-- Include a description of the BuckleGarde -->
-    <div ng-include="'includes/WhatIsBuckleGarde.html'"></div>
+    <div ng-include="'includes/whatIsBuckleGarde.html'"></div>
 
     <!-- How it works -->
     <div class="row">
@@ -130,7 +134,7 @@
                     <h4>Step 1</h4>
                     <p>
                         Cover the buckle
-                        <a href="#step-two" show-tabs="" data-toggle="tab">
+                        <a href="#step-two" show-tabs="">
                             <i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>
                         </a>
                     </p>
@@ -141,11 +145,11 @@
                 <div class="tab-pane fade" id="step-two">
                     <h4>Step 2</h4>
                     <p>
-                        <a href="#step-one" show-tabs="" data-toggle="tab">
+                        <a href="#step-one" show-tabs="">
                             <i class="fa fa-fw fa-chevron-circle-left" aria-hidden="true"></i>
                         </a>
                         Press the buckle together to lock as normal
-                        <a href="#step-three" show-tabs="" data-toggle="tab">
+                        <a href="#step-three" show-tabs="">
                             <i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>
                         </a>
                     </p>
@@ -156,7 +160,7 @@
                 <div class="tab-pane fade" id="step-three">
                     <h4>Step 3</h4>
                     <p>
-                        <a href="#step-two" show-tabs="" data-toggle="tab">
+                        <a href="#step-two" show-tabs="">
                             <i class="fa fa-fw fa-chevron-circle-left" aria-hidden="true"></i>
                         </a>
 
@@ -168,11 +172,8 @@
                         <img class="img-responsive" src="images/IMG_ThirdSmall.jpg" alt="BuckleGarde third step">
                     </div>
                 </div>
-            </div>
-
+            </div> <!-- /.tab-content -->
         </div>
-    </div>
-
-</div> <!-- /.row -->
+    </div> <!-- /.row -->
 
 </div> <!-- /.container -->
