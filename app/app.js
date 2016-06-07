@@ -38,7 +38,11 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'privacy/privacy.html',
         controller: 'privacyController'
     });
-    $routeProvider.otherwise({redirectTo: '/home'});
+    $routeProvider.when('/http404', {
+        templateUrl: 'http404/http404.html',
+        controller: 'http404Controller'
+    });
+    $routeProvider.otherwise({redirectTo: '/http404'});
 }]);
 
 /*
