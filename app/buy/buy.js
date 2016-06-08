@@ -1,5 +1,5 @@
 "use strict";
 
-app.controller('orderController', [function($scope) {
+app.controller('buyController', [function($scope) {
 
 }]);

@@ -18,9 +18,9 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'products/products.html',
         controller: 'productsController'
     });
-    $routeProvider.when('/order', {
+    $routeProvider.when('/buy', {
         templateUrl: 'buy/buy.html',
-        controller: 'orderController'
+        controller: 'buyController'
     });
     $routeProvider.when('/about', {
         templateUrl: 'about/about.html',
@@ -29,6 +29,10 @@ app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/contact', {
         templateUrl: 'contact/contact.html',
         controller: 'contactController'
+    });
+    $routeProvider.when('/faq', {
+        templateUrl: 'faq/faq.html',
+        controller: 'faqController'
     });
     $routeProvider.when('/news', {
         templateUrl: 'news/news.html',
