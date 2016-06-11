@@ -1,7 +1,7 @@
 /*
-  Jquery Validation using jqBootstrapValidation
-   example is taken from jqBootstrapValidation docs 
-  */
+ * Jquery Validation using jqBootstrapValidation
+ * example is taken from jqBootstrapValidation docs
+ */
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -50,7 +50,8 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:me@example.com?Subject=Message_Me from myprogrammingblog.com;>me@example.com</a> ? Sorry for the inconvenience!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName +
+                        " it seems that my mail server is not responding...</strong> Please email us directly at <a href='mailto:info@gardesystems.com?Subject=Garde Contact Form;'>info@gardesystems.com</a>. Sorry for the inconvenience!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
@@ -69,7 +70,7 @@ $(function() {
 });
 
 
-/*When clicking on Full hide fail/success boxes */
+/* When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
 });

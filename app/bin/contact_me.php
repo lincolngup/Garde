@@ -17,10 +17,24 @@
     // create email body and send it
     $to = 'info@gardesystems.com';
     $email_subject = "Garde Contact Form: $name";
-    $email_body = "You have received a new message from Garde website's contact form.\n\n".
-        "Here are the details:\n\nName: $name\n\nPhone: $phone\n\nEmail: $email_address\n\nMessage:\n$message";
-    $headers = "From: noreply@gardesystems.com\n";
-    $headers .= "Reply-To: $email_address";
-    mail($to,$email_subject,$email_body,$headers);
+    $email_body = "You have received a new message from Garde website's contact form.\n" .
+        "Here are the details:\n" .
+        "Name: $name\n" .
+        "Phone: $phone\n" .
+        "Email: $email_address\n" .
+        "Message:\n$message";
+
+    $headers   = array();
+    $headers[] = "MIME-Version: 1.0";
+    $headers[] = "Content-type: text/plain; charset=iso-8859-1";
+    $headers[] = 'Date: ' . date('r', $_SERVER['REQUEST_TIME']);
+    $headers[] = 'Message-ID: <' . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>';
+    $headers[] = 'From: ' . $to;
+    $headers[] = 'Reply-To: ' . $to;
+    $headers[] = 'Return-Path: ' . $to;
+    $headers[] = 'X-Mailer: PHP v' . phpversion();
+    $headers[] = 'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'];
+
+    mail($to, $email_subject, $email_body, implode("\r\n", $headers));
     return true;
 ?>
