@@ -22,6 +22,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'products/products.html',
         controller: 'productsController'
     });
+    $routeProvider.when('/demo', {
+        templateUrl: 'demo/demo.html',
+        controller: 'demoController'
+    });
     $routeProvider.when('/buy', {
         templateUrl: 'buy/buy.html',
         controller: 'buyController'
@@ -55,6 +59,8 @@ app.config(['$routeProvider', function($routeProvider) {
 
 /*
  * The show-tabs directive corrects click handling for nav-tabs.
+ * Without this, the Bootstrap click event propagates and results
+ * in a 404 error.
  */
 app.directive("showTabs", function() {
     return {
