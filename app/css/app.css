@@ -43,8 +43,14 @@ footer {
     margin: 50px 0;
 }
 
+/* formatting for logo in navigation bar */
 .gardeLogo {
     height: 50px;
+}
+
+/* personal picture in About > Out Team */
+.ourTeamImage {
+    width: 200px;
 }
 
 /*
