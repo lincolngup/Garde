@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "Garde",
+  "description": "Garde Systems LLC",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/lincolngup/Garde",
   "license": "MIT",
   "private": true,
   "dependencies": {
