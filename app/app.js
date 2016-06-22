@@ -46,6 +46,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'news/news.html',
         controller: 'newsController'
     });
+    $routeProvider.when('/pricing', {
+        templateUrl: 'pricing/pricing.html',
+        controller: 'pricingController'
+    });
     $routeProvider.when('/privacy', {
         templateUrl: 'privacy/privacy.html',
         controller: 'privacyController'
